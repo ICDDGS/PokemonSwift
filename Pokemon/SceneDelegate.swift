@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Pokemon
+//  MVC
 //
-//  Created by Alejandro on 06/03/25.
+//  Created by Rafael Gonzalez on 21/02/25.
 //
 
 import UIKit
