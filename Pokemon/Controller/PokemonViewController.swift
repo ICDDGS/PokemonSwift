@@ -2,7 +2,7 @@
 //  PokemonViewController.swift
 //  MVC
 //
-//  Created by Rafael Gonzalez on 21/02/25.
+//  Created by Daniel Cruz on 21/02/25.
 //
 
 import UIKit
