@@ -15,8 +15,12 @@ class PokemonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Color darkMode
+        view.backgroundColor = UIColor(named: "darkModeColor")
+        pokemonTable.backgroundColor = UIColor(named: "darkModeColor")
 
-        // Do any additional setup after loading the view.
+        
         pokemonTable.dataSource = self
         pokemonTable.delegate = self
         

@@ -17,6 +17,7 @@ class PokemonCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = UIColor(named: "darkModeColor")
         // Initialization code
     }
 

@@ -20,6 +20,7 @@ class PokemonDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(named: "darkModeColor")
         if let pokemon = pokemon {
             pokemonImageView.image = UIImage(named: pokemon.image)
             pokemonNameLabel.text = pokemon.name
