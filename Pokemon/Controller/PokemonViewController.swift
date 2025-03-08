@@ -45,12 +45,19 @@ extension PokemonViewController : UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "Pokemones"
-//    }
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return UIImageView(image: UIImage(named: "PokemonHeader"))
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let pokemon = dataManager.getPokemon(at: indexPath.row) else { return }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let detailVC = storyboard.instantiateViewController(withIdentifier: "PokemonDetailViewController") as? PokemonDetailViewController {
+            detailVC.pokemon = pokemon
+            detailVC.modalPresentationStyle = .fullScreen
+            present(detailVC, animated: true, completion: nil)
+        }
+    }
+
     
 }

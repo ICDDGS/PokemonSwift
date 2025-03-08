@@ -80,6 +80,86 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
+        <!--Pokemon Detail View Controller-->
+        <scene sceneID="Ztd-PT-q2H">
+            <objects>
+                <viewController storyboardIdentifier="PokemonDetailViewController" id="uYS-5T-I70" customClass="PokemonDetailViewController" customModule="Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4B2-aW-B3T">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDE-cF-h6e">
+                                <rect key="frame" x="77" y="98" width="249" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8n1-y4-o4o"/>
+                                    <constraint firstAttribute="width" constant="249" id="I16-2O-0cW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gyQ-lv-R9c">
+                                <rect key="frame" x="96.666666666666686" y="211" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="xh6-Li-9Vn"/>
+                                    <constraint firstAttribute="width" constant="200" id="xhY-2V-K3t"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tv-cl-x42">
+                                <rect key="frame" x="77" y="459" width="249" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="3ug-2G-Qwo"/>
+                                    <constraint firstAttribute="width" constant="249" id="pmX-66-iuP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enX-on-HTe">
+                                <rect key="frame" x="77" y="571" width="249" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="dpK-yo-nhM"/>
+                                    <constraint firstAttribute="height" constant="73" id="vek-vf-pOL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsR-xq-HTo">
+                                <rect key="frame" x="159" y="703" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="uYS-5T-I70" eventType="touchUpInside" id="8Uc-bp-JRe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FXa-MV-VLZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gyQ-lv-R9c" firstAttribute="top" secondItem="4B2-aW-B3T" secondAttribute="top" constant="211" id="25c-jV-f7O"/>
+                            <constraint firstItem="KsR-xq-HTo" firstAttribute="top" secondItem="enX-on-HTe" secondAttribute="bottom" constant="59" id="3Vf-y7-5HC"/>
+                            <constraint firstItem="enX-on-HTe" firstAttribute="top" secondItem="7tv-cl-x42" secondAttribute="bottom" constant="38" id="9zf-lK-AsI"/>
+                            <constraint firstItem="7tv-cl-x42" firstAttribute="leading" secondItem="enX-on-HTe" secondAttribute="leading" id="HKi-Yo-XO3"/>
+                            <constraint firstItem="7tv-cl-x42" firstAttribute="top" secondItem="gyQ-lv-R9c" secondAttribute="bottom" constant="48" id="ToE-z0-cZ0"/>
+                            <constraint firstItem="gyQ-lv-R9c" firstAttribute="top" secondItem="hDE-cF-h6e" secondAttribute="bottom" constant="63" id="dBP-Zt-uZM"/>
+                            <constraint firstItem="gyQ-lv-R9c" firstAttribute="centerX" secondItem="4B2-aW-B3T" secondAttribute="centerX" id="flL-nm-d1u"/>
+                            <constraint firstItem="gyQ-lv-R9c" firstAttribute="centerX" secondItem="hDE-cF-h6e" secondAttribute="centerX" constant="-4.8333333333333144" id="ptK-9c-fkh"/>
+                            <constraint firstItem="KsR-xq-HTo" firstAttribute="leading" secondItem="FXa-MV-VLZ" secondAttribute="leading" constant="159" id="r0G-S5-C7H"/>
+                            <constraint firstItem="7tv-cl-x42" firstAttribute="leading" secondItem="FXa-MV-VLZ" secondAttribute="leading" constant="77" id="x0F-oB-KNC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pokemonAbilityLabel" destination="enX-on-HTe" id="oWz-Rv-8RO"/>
+                        <outlet property="pokemonImageView" destination="gyQ-lv-R9c" id="ioP-Fo-qUA"/>
+                        <outlet property="pokemonMoveLabel" destination="7tv-cl-x42" id="FBL-qa-jnB"/>
+                        <outlet property="pokemonNameLabel" destination="hDE-cF-h6e" id="N45-bh-6cX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6J-6d-Xa3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.4045801526718" y="6.3380281690140849"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
